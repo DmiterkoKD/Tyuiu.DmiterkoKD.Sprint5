@@ -8,7 +8,7 @@ namespace Tyuiu.DmiterkoKD.Sprint5.Task0.V11.Lib
         {
             string p = $@"{Directory.GetCurrentDirectory()}\OutPutFileTask0.txt";
             double y = (4 - Math.Pow(x, 3)) / Math.Pow(x, 2);
-            y = Math.Round(y, 2);
+            y = Math.Round(y, 3);
             File.WriteAllText(p,Convert.ToString(y));
             return p;
         }
