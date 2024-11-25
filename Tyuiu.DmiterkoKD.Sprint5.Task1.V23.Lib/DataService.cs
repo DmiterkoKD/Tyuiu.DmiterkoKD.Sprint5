@@ -19,7 +19,7 @@ namespace Tyuiu.DmiterkoKD.Sprint5.Task1.V23.Lib
             {
                 y = Math.Cos(x) + (Math.Cos(x)) / (x + 2) - 3 * x;
                 y = Math.Round(y, 2);
-                if (x == 0)
+                if (x == 0 || x ==-2)
                 {
                     y = 0;
                 }
