@@ -19,7 +19,7 @@ namespace Tyuiu.DmiterkoKD.Sprint5.Task7.V5
             Console.WriteLine("* буквы из файла.Полученный результат сохранить.                          *");
             Console.WriteLine("***************************************************************************");
             Console.WriteLine("* ИСХОДНЫЕ ДАННЫЕ:                                                        *");
-            string path = Path.Combine(Path.GetTempPath(), "InPutDataFileTask6V14.txt");
+            string path = Path.Combine(Path.GetTempPath(), "InPutDataFileTask7V5.txt");
             Console.WriteLine("Данныне находяться в файле: " + path);
 
 

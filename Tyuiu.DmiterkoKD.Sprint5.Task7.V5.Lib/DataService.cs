@@ -21,7 +21,7 @@ namespace Tyuiu.DmiterkoKD.Sprint5.Task7.V5.Lib
                 {
                     for (int i = 0; i < line.Length; i++)
                     {
-                        if (line[i] == 'H' || line[i] == 'e' || line[i] == 'l' || line[i] == 'o')
+                        if ((line[i] != 'H') || (line[i] != 'e') || (line[i] != 'l') || (line[i] != 'o') || (line[i] != 'I') || (line[i] != 's') || (line[i] != 'M') || (line[i] != 'y') || (line[i] != 'F') || (line[i] != 'i') || (line[i] != 'r') || (line[i] != 't') || (line[i] != 'P') || (line[i] != 'g') || (line[i] != 'a') || (line[i] != 'm'))
                         {
                             strLine = strLine + line[i];
                         }
