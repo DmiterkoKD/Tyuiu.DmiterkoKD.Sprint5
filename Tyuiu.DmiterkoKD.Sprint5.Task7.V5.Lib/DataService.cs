@@ -27,6 +27,7 @@ namespace Tyuiu.DmiterkoKD.Sprint5.Task7.V5.Lib
                         }
                     }
                 }
+                strLine = strLine.Replace("    .", ".");
                 File.AppendAllText(pS, strLine + Environment.NewLine);
                 strLine = "";
             }
