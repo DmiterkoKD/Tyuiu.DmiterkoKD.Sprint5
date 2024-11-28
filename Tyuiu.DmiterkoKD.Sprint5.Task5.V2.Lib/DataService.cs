@@ -6,24 +6,19 @@ namespace Tyuiu.DmiterkoKD.Sprint5.Task5.V2.Lib
     {
         public double LoadFromDataFile(string path)
         {
-            double res = 0;
+            string[] strNum = File.ReadAllLines(path);
+            double[] nums = Array.ConvertAll(strNum[0].Split(','), double.Parse);
             int k = 0;
-            using (StreamReader sr = new StreamReader(path))
-            {
-                string line;
-                while ((line = sr.ReadLine()) != null)
+            double res = 0;
+            for (int i = 0; i < nums.Length; i++) {
+                if (nums[i] > 0)
                 {
-                    double x = Convert.ToDouble(line);
                     k++;
-                    if (x > 0)
-                    {
-                        res += x;
-                    }                    
+                    res += nums[i];
                 }
-                double a = Math.Round((res / k), 3);
-                return a;
-                
             }
+            double x = Math.Round((res / k), 3);
+            return x;
         }
     }
 }
