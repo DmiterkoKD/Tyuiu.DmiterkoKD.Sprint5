@@ -11,10 +11,7 @@ namespace Tyuiu.DmiterkoKD.Sprint5.Task4.V18.Lib
             {
                 string content = File.ReadAllText(path);
                 content = content.Replace('.', ',');
-                x = Double.Parse(content);
-
-
-
+                x = Double.Parse(content);                
             }
             double res = Math.Cos(x) + (Math.Pow(x, 2) / 2);
             return Math.Round(res,3);
