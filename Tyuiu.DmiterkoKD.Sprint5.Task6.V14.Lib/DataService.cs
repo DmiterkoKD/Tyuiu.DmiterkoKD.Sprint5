@@ -12,13 +12,16 @@ namespace Tyuiu.DmiterkoKD.Sprint5.Task6.V14.Lib
                 string line;
                 while ((line = sr.ReadLine()) != null)
                 {
-                    for (int i = 0; i < line.Length; i++) {
-                        if (line[i] == '.' || line[i] == '?')
+                    for (int i = 0; i < line.Length; i++)
+                    {
+                        if (line[i] == '.' || line[i] == '?' || line[i] == ',' || line[i] == '!')
                         {
                             count++;
                         }
+                    }
                 }
             }
+            return count;
 
         }
     }
